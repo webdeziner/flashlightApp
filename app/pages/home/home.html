@@ -14,7 +14,7 @@
             Is turned on: {{isOn}}
         </ion-card-content>
     </ion-card>
-    <ion-card *nfIf="isAvailable">
+    <ion-card *ngIf="isAvailable">
         <ion-card-content>
             <button block primary (click)="turnOn($event)">Turn on</button>
             <button block dark (click)="turnOff($event)">Turn off</button>
